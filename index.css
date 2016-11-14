@@ -1,0 +1,13 @@
+
+.bg{
+   
+    background-color: #EBF2F9;
+    color: #145CCD;
+}
+
+#notice{
+    padding: 20px;
+    color: brown;
+    font-size: 20px;
+    text-align: center;
+}
