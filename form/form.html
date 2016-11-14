@@ -1,0 +1,1427 @@
+
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>采购信息-电气制造专业信息系统平台</title>
+<!--表单样式文件  -->
+     <link rel="stylesheet" href="http://cdn.bootcss.com/zui/1.5.0/css/zui.min.css">
+    <script src="http://cdn.bootcss.com/zui/1.5.0/lib/jquery/jquery.js"></script>
+    <script src="http://cdn.bootcss.com/zui/1.5.0/js/zui.min.js"></script>
+    <link rel="stylesheet" href="../form/index.css">
+
+    <link type="http://www.e9688.com/image/x-icon" href="favicon.ico" rel="icon">
+    <link href="http://www.e9688.com/views/default/skin/default/css/css.css" rel="stylesheet" type="text/css" />
+    <script src="http://www.e9688.com/views/default/skin/default/js/jquery-1.8.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript" charset="UTF-8" src="http://www.e9688.com/runtime/_systemjs/jquery/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="http://www.e9688.com/runtime/_systemjs/jquery/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="http://www.e9688.com/runtime/_systemjs/autovalidate/validate.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://www.e9688.com/runtime/_systemjs/autovalidate/style.css" />
+    <script type="text/javascript" charset="UTF-8" src="http://www.e9688.com/runtime/_systemjs/form/form.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="http://www.e9688.com/runtime/_systemjs/artdialog/artDialog.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="http://www.e9688.com/runtime/_systemjs/artdialog/plugins/iframeTools.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://www.e9688.com/runtime/_systemjs/artdialog/skins/default.css" />
+    <script src="http://www.e9688.com/views/default/skin/default/js/jquery-1.8.0.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="http://www.e9688.com/plugins/sonline/style/red.css" />
+    <script type="text/javascript" src="http://www.e9688.com/plugins/sonline/js/jquery.Sonline.js"></script>
+    <script type='text/javascript'>
+    $(function(){
+    //$().Sonline({
+    //    "Tel":"400-086-7716",
+    //    "Qqlist":"270738067|在线客服,544455454|在线客服"
+    //});
+    });
+</script></head>
+<body>
+<!--topper start-->
+<div id="topper">
+  <div class="topperm">
+    <div class="topperm1 fl">中国最权威的电气销售与服务平台！</div>
+        <div class="topperm2 fr">
+                <a href="/index.php?controller=simple&action=login" style="color:#0067ac;">[登录]</a> | <a href="/index.php?controller=simple&action=reg&callback=" style="color:#0067ac;">[注册]</a> |         <a href="/index.php?controller=ucenter&action=complain">客户留言</a>
+        </div>
+    </div>
+  </div>
+</div>
+<!--topper end-->
+<!--header start-->
+<div id="header">
+  <div class="logo fl"><a title="电气制造专业信息系统平台" href="/"><img src="http://www.e9688.com/views/default/skin/default/images/logo.jpg" /></a></div>
+  <div class="search_box">
+    <div class="search">
+        <form method='get' action='/index.php'>
+            <div id="pt1" class="select"> 
+                <a id="s0">全部产品</a>
+            </div>
+            <input type='hidden' name='controller' value='site' />
+            <input type='hidden' name='action' value='search_list' />
+            <input type="text" class="enter" name='word' autocomplete="off" value="输入关键字..." >
+            <input class="sb" name="Input" type="submit"  value="" onclick="checkInput('word','输入关键字...');">
+        </form>
+    </div>
+  </div>
+
+  <div class="tel fr"><img src="http://www.e9688.com/views/default/skin/default/images/tel.jpg" /></div>
+  <div class="clear"></div>
+</div>
+<!--header end-->
+    <style>
+    .join 
+    {
+            background-attachment: scroll;
+            background-clip: border-box;
+            background-color: rgba(0, 0, 0, 0);
+            background-image: url(http://www.e9688.com/views/default/skin/default/images/front/ucenter/btn_bg.gif);
+            background-origin: padding-box;
+            background-size: auto;
+            border-collapse: separate;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            display: inline-block;
+            font-family: 微软雅黑, Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            font-weight: normal;
+            height: 23px;
+            line-height: 23px;
+            list-style-image: none;
+            list-style-position: outside;
+            list-style-type: none;
+            margin-bottom: 3px;
+            /*margin-left: 4px;
+            margin-right: 10px;*/
+            overflow-x: hidden;
+            overflow-y: hidden;
+            padding-bottom: 0px;
+            padding-left: 2px;
+            padding-right: 0px;
+            padding-top: 0px;
+            vertical-align: middle;
+            text-align: center;
+            width: 70px;
+    }
+    .join:hover
+    {
+        color:#fff;
+    }
+</style>
+<link rel="stylesheet" href="http:www.e9688.com/views/default/skin/default/css/lanren.css">
+<link rel="stylesheet" href="http:www.e9688.com/views/default/skin/default/css/pro_list.css">
+
+    <script src="http:www.e9688.com/views/default/skin/default/js/ec.core.js"></script>
+    <script src="http:www.e9688.com/views/default/skin/default/js/jsapi.js" namespace="ec"></script>
+    <script src="http:www.e9688.com/views/default/skin/default/js/ddsmoothmenu.js" type="text/javascript"></script>
+<script type="text/javascript">
+    /* 水平导航 */
+    ddsmoothmenu.init({
+        mainmenuid: "smoothmenu1", //menu DIV id
+        orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+        classname: 'ddsmoothmenu', //class added to menu's outer DIV
+        //customtheme: ["#1c5a80", "#18374a"],
+        contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+    })
+</script>
+<script type='text/javascript' src="http:www.e9688.com/views/default/javascript/common.js"></script>
+<script type='text/javascript' src='http:www.e9688.com/views/default/javascript/site.js'></script>
+<!--导航 start-->
+<div id="menu">
+    <div class="menu">
+        <div id="category-2015" onmouseover="this.className='on'" onmouseleave="this.className=''">
+            <div class="ld">
+                <h2><a href="javascript:void(0);">全部商品分类</a><b></b></h2>
+            </div>
+            <div id="allsort">        
+                <div class="item" onmouseover="this.className='item on'" onmouseleave="this.className='item'">
+                    <span>
+                        <h3><a href="/index.php?controller=site&action=pro_list&cat=1">电力变压器</a></h3>
+                    </span>
+                    <div class="i-mc clearfix">
+                        <div class="close">x</div>
+                        <div class="subitem">
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=3">干式配变</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=10">SCB10/SCB11树脂浇注干变</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=11">SCB13/SGH13立体卷铁心干变</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=12">SCBH15非晶合金干变</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=13">SGH10/SGH11通风敞开干变</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=4">油浸配变</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=14">S11/S13配变</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=15">S13立体卷铁心配变</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=16">SH15非晶合金配变</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=17">单相配变</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=5">电力主变</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=18">35kV级主变</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=19">66kV级主变</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=20">110kV主变</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=21">220kV主变</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=6">特种变压器</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=22">矿用变</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=23">整流变</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=24">电炉变</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=25">牵引变</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=26">试验变</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=27">其他</a></em>
+                                </dd>
+                            </dl>
+                           <div class="peijian">
+                                <div class="peijian1">相应配件</div>
+                                <dl class="fore5">
+                                    <dt>
+                                        <a href="/index.php?controller=site&action=pro_list&cat=418">变压器配套</a>
+                                    </dt>
+                                    <dd> 
+                                        <em><a href="/index.php?controller=site&action=pro_list&cat=431">油箱</a></em>  
+                                        <em><a href="/index.php?controller=site&action=pro_list&cat=432">导电杆</a></em>  
+                                        <em><a href="/index.php?controller=site&action=pro_list&cat=433">变压器套管</a></em>  
+                                        <em><a href="/index.php?controller=site&action=pro_list&cat=434">压力释放阀</a></em>  
+                                        <em><a href="/index.php?controller=site&action=pro_list&cat=435">分接开关</a></em>  
+                                        <em><a href="/index.php?controller=site&action=pro_list&cat=436">有载调压开关</a></em>  
+                                        <em><a href="/index.php?controller=site&action=pro_list&cat=437">干变外壳</a></em>  
+                                        <em><a href="/index.php?controller=site&action=pro_list&cat=438">干变绝缘子</a></em>  
+                                        <em><a href="/index.php?controller=site&action=pro_list&cat=439">铜铝排</a></em>  
+                                        <em><a href="/index.php?controller=site&action=pro_list&cat=440">风机</a></em> 
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="cat-right">
+                            <dl class="categorys-promotions" clstag="homepage|keycount|home2013|0601c">
+                                <dd>
+                                    <ul>
+                                        <li>
+                                            <a href="/index.php?controller=site&action=products&id=7" title="山东华尚/SCB10系列/环氧浇注干变">
+                                            <img src="http:www.e9688.com/upload/2015/10/16/20151016160900386.jpg" width="194" height="145" title="山东华尚/SCB10系列/环氧浇注干变"></a>
+                                        </li>
+                                        <li>
+                                            <a href="/index.php?controller=site&action=products&id=8" title="山东华尚/SBH15系列/非晶合金油变">
+                                            <img src="http:www.e9688.com/upload/2015/08/05/20150805114357385.jpg" width="194" height="145" title="山东华尚/SBH15系列/非晶合金油变"></a>
+                                        </li>
+                                        <li><a href="/index.php?controller=site&action=products&id=9" title="SCB10环氧浇注干式变压器">
+                                            <img src="http:www.e9688.com/upload/2015/08/07/20150807155240873.jpg" width="194" height="145" title="SCB10环氧浇注干式变压器"></a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                       
+                <div class="item" onmouseover="this.className='item on'" onmouseleave="this.className='item'">
+                    <span>
+                        <h3><a href="/index.php?controller=site&action=pro_list&cat=2">箱式变电站/高低压开关柜设备</a></h3>
+                    </span>
+                    <div class="i-mc clearfix">
+                        <div class="close">x</div>
+                        <div class="subitem">
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=7">箱式变电站</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=28">预装式变电站</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=29">组合式变压器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=30">风力箱变</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=31">光伏箱变</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=32">路灯箱变</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=33">地埋式箱变</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=8">高压开关设备</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=34">固定式开关柜</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=35">移开式开关柜</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=36">高压环网柜</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=37">组合电器(GIS)</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=38">高压电缆分接箱</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=39">户外开闭所</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=484">消弧设备</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=9">低压开关设备</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=40">抽出式开关柜</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=41">固定式开关柜</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=42">配电箱</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=43">计量箱</a></em>
+                                </dd>
+                            </dl>
+                            <div class="peijian">
+                                <div class="peijian1">相应配件</div>
+                                <dl class="fore5">
+                                    <dt><a href="/index.php?controller=site&action=pro_list&cat=417">加工设备</a></dt>
+                                    <dd> 
+                                        <em><a href="/index.php?controller=site&action=pro_list&cat=421">变压器加工设备</a></em>  
+                                        <em><a href="/index.php?controller=site&action=pro_list&cat=422">互感器加工设备</a></em>  
+                                        <em><a href="/index.php?controller=site&action=pro_list&cat=423">电容器加工设备</a></em>  
+                                        <em><a href="/index.php?controller=site&action=pro_list&cat=424">电抗器加工设备</a></em>  
+                                        <em><a href="/index.php?controller=site&action=pro_list&cat=425">绝缘子加工设备</a></em>  
+                                        <em><a href="/index.php?controller=site&action=pro_list&cat=426">开关柜加工设备</a></em>  
+                                        <em><a href="/index.php?controller=site&action=pro_list&cat=427">电机加工设备</a></em>  
+                                        <em><a href="/index.php?controller=site&action=pro_list&cat=428">电焊机加工设备</a></em>  
+                                        <em><a href="/index.php?controller=site&action=pro_list&cat=429">电磁线加工设备</a></em> 
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="cat-right">
+                            <dl class="categorys-promotions" clstag="homepage|keycount|home2013|0601c">
+                                <dd>
+                                    <ul>
+                                        <li><a href="/index.php?controller=site&action=products&id=10" title="钱江电气/ZYB系列/欧式箱式变电站">
+                                            <img src="http:www.e9688.com/upload/2015/08/07/20150807160837115.jpg" width="194" height="145" title="钱江电气/ZYB系列/欧式箱式变电站"></a>
+                                        </li>
+                                        <li><a href="/index.php?controller=site&action=products&id=535" title="安徽中电/ZD-GWJ/高压分组自动无功补偿柜">
+                                            <img src="http:www.e9688.com/upload/2016/01/30/20160130161953458.jpg" width="194" height="145" title="安徽中电/ZD-GWJ/高压分组自动无功补偿柜"></a>
+                                        </li>
+                                        <li><a href="/index.php?controller=site&action=products&id=534" title="安徽中电/ZD-GWJ/高压分组自动无功补偿柜">
+                                            <img src="http:www.e9688.com/upload/2016/01/30/20160130161953458.jpg" width="194" height="145" title="安徽中电/ZD-GWJ/高压分组自动无功补偿柜"></a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                       
+                <div class="item" onmouseover="this.className='item on'" onmouseleave="this.className='item'">
+                    <span>
+                        <h3><a href="/index.php?controller=site&action=pro_list&cat=44">高压电器/低压电器</a></h3>
+                    </span>
+                    <div class="i-mc clearfix">
+                        <div class="close">x</div>
+                        <div class="subitem">
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=45">高压电器</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=47">真空断路器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=48">高压六氟化硫断路器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=49">高压多油/少油断路器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=50">高压隔离开关</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=51">高压重合闸与分段器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=52">高压跌落式熔断器</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=53">低压断路器</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=66">塑料外壳式断路器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=67">框架式断路器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=69">智能化断路器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=70">其他断路器</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=54">低压熔断器</a></dt>
+                                <dd>                                   
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=71">有填料封闭管式熔断器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=72">无填料封闭管式熔断器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=73">保护半导体器件熔断器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=74">自复熔断器</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=55">低压刀开关</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=75">熔断器式刀开关</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=77">大电流刀开关</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=78">负荷开关</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=56">转换开关</a></dt>
+                                <dd>                                   
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=79">组合开关</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=80">转向开关</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=57">低压接触器</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=81">交流接触器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=82">直流接触器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=83">真空接触器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=84">半导体接触器</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=58">控制继电器</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=85">电流继电器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=86">电压继电器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=87">时间继电器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=88">中间继电器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=89">热过载继电器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=90">温度继电器</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=60">低压启动器</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=92">电磁启动器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=93">自耦减压启动器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=94">Y-△启动器</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=61">低压控制器</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=95">凸轮控制器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=96">平面控制器</a></em>
+                                </dd>
+                            </dl>
+                                <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=62">主令电器</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=97">按钮</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=98">限位开关</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=99">万能转换开关</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=100">微动开关</a></em>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="cat-right">
+                            <dl class="categorys-promotions" clstag="homepage|keycount|home2013|0601c">
+                                <dd>
+                                    <ul>
+                                        <li><a href="/index.php?controller=site&action=products&id=505" title="赛德电气 SDM3系列 塑料外壳式断路器（热磁式）">
+                                            <img src="http:www.e9688.com/upload/2015/10/09/20151009222625458.jpg" width="194" height="145" title="赛德电气 SDM3系列 塑料外壳式断路器（热磁式）"></a>
+                                        </li>
+                                        <li><a href="/index.php?controller=site&action=products&id=489" title="西门子/GW8-60kV系列/高压隔离开关">
+                                            <img src="http:www.e9688.com/upload/2015/10/04/20151004182604170.jpg" width="194" height="145" title="西门子/GW8-60kV系列/高压隔离开关"></a>
+                                        </li>
+                                        <li><a href="/index.php?controller=site&action=products&id=463" title="鲁泰/ZX2系列/电阻器">
+                                            <img src="http:www.e9688.com/upload/2015/09/12/20150912100259676.jpg" width="194" height="145" title="鲁泰/ZX2系列/电阻器"></a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                       
+                <div class="item" onmouseover="this.className='item on'" onmouseleave="this.className='item'">
+                    <span>
+                        <h3><a href="/index.php?controller=site&action=pro_list&cat=101">互感器/调压器/电抗器/电容器</a></h3>
+                    </span>
+                    <div class="i-mc clearfix">
+                        <div class="close">x</div>
+                        <div class="subitem">
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=110">互感器</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=159">电压互感器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=160">电流互感器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=161">零序电流互感器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=162">组合互感器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=163">光耦合式电流互感器</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=111">调压器</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=164">接触调压器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=165">移圈调压器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=166">磁性调压器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=167">感性调压器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=168">晶闸管调压器</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=112">电抗器</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=169">并联电抗器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=170">串联电抗器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=171">消弧线圈</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=172">滤波电抗器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=173">平波电抗器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=174">平衡电抗器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=175">进线电抗器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=176">出线电抗器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=177">饱和电抗器</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=113">电容器</a></dt>
+                                <dd>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=178">高压并联电容器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=179">低压并联电容器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=180">自愈式低压并联电容器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=181">集合式并联电容器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=182">串联电容器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=183">高压交流滤波电容器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=184">耦合电容器及电容分压器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=185">脉冲电容器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=186">压缩气体标准电容器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=187">其他电容器</a></em>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="cat-right">
+                            <dl class="categorys-promotions" clstag="homepage|keycount|home2013|0601c">
+                                <dd>
+                                    <ul>
+                                        <li>
+                                            <a href="/index.php?controller=site&action=products&id=460" title="上海鼓得电子/CKSC干式铁芯串联电抗器">
+                                            <img src="http:www.e9688.com/upload/2015/09/11/20150911225033499.jpg" width="194" height="145" title="上海鼓得电子/CKSC干式铁芯串联电抗器"></a>
+                                        </li>
+                                        <li>
+                                            <a href="/index.php?controller=site&action=products&id=459" title="山东哈大电气/BKSC干式铁芯并联电抗器">
+                                            <img src="http:www.e9688.com/upload/2015/09/11/20150911223308354.jpg" width="194" height="145" title="山东哈大电气/BKSC干式铁芯并联电抗器"></a>
+                                        </li>
+                                            <li>
+                                                <a href="/index.php?controller=site&action=products&id=458" title="宜兴万华/TDH型 单相磁性调压器">
+                                                <img src="http:www.e9688.com/upload/2015/09/11/20150911203114263.jpg" width="194" height="145" title="宜兴万华/TDH型 单相磁性调压器"></a>
+                                            </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                       
+                <div class="item" onmouseover="this.className='item on'" onmouseleave="this.className='item'">
+                    <span>
+                        <h3><a href="/index.php?controller=site&action=pro_list&cat=102">电缆/电磁线/绝缘子/避雷器</a></h3>
+                    </span>
+                    <div class="i-mc clearfix">
+                        <div class="close">x</div>
+                        <div class="subitem">
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=114">电缆</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=188">中高压电力电缆</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=189">低压电力电缆</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=190">特种电力电缆</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=115">电磁线</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=191">纸包扁线</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=192">玻璃丝包扁线</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=193">膜包扁线</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=194">漆包圆线</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=195">纸包圆线</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=196">玻璃丝包圆线</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=446">铜铝箔</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=447">铜箔</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=448">铝箔</a></em>
+                                </dd>
+                            </dl>
+                                <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=116">架空导线</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=197">钢芯铝绞线</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=198">铝合金绞线</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=199">钢芯铝合金绞线</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=200">钢芯铝包钢绞线</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=117">绝缘子</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=201">复合绝缘子</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=202">陶瓷绝缘子</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=203">玻璃绝缘子</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=118">避雷器</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=204">交流阀式避雷针</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=205">直流阀式避雷针</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=206">金属氧化物避雷针</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=207">管式避雷针</a></em>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="cat-right">
+                            <dl class="categorys-promotions" clstag="homepage|keycount|home2013|0601c">
+                                <dd>
+                                    <ul>
+                                        <li><a href="/index.php?controller=site&action=products&id=382" title="江苏上上/乙丙（交联聚乙烯）绝缘船用电力电缆/CEFR">
+                                            <img src="http:www.e9688.com/upload/2015/09/01/20150901112949280.jpg" width="194" height="145" title="江苏上上/乙丙（交联聚乙烯）绝缘船用电力电缆/CEFR"></a>
+                                        </li>
+                                        <li><a href="/index.php?controller=site&action=products&id=380" title="安徽江淮/耐高温电力电缆">
+                                            <img src="http:www.e9688.com/upload/2015/09/01/20150901110513208.jpg" width="194" height="145" title="安徽江淮/耐高温电力电缆"></a>
+                                        </li>
+                                        <li><a href="/index.php?controller=site&action=products&id=378" title="河南金水/聚氯乙烯绝缘电力电缆/VV22">
+                                            <img src="http:www.e9688.com/upload/2015/09/01/20150901105046359.jpg" width="194" height="145" title="河南金水/聚氯乙烯绝缘电力电缆/VV22"></a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                       
+                <div class="item" onmouseover="this.className='item on'" onmouseleave="this.className='item'">
+                    <span>
+                        <h3><a href="/index.php?controller=site&action=pro_list&cat=103">电动机/电机控制设备/发电机组</a></h3>
+                    </span>
+                    <div class="i-mc clearfix">
+                        <div class="close">x</div>
+                        <div class="subitem">
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=122">高压电动机</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=232">高压鼠笼式</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=233">高压绕线式</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=234">高压同步电机</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=400">高压变频调速电机</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=119">异步电动机</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=208">单相异步电动机</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=209">鼠笼式三相异步电动机</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=210">绕线转子三相异步电动机</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=211">高效率</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=212">冶金及起重用</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=213">制动减速用</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=214">增安型</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=215">防爆型</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=216">变频调速</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=217">其他</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=120">同步电动机</a></dt>
+                                <dd>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=218">三相同步电动机</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=219">通风机用</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=220">磨机用</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=221">轧机用</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=222">增安型</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=223">防爆型</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=224">永磁式</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=225">其他</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=121">直流电动机</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=226">有刷直流电机</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=227">无刷直流电机</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=228">永磁</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=229">防爆</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=230">冶金及起重用</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=231">其他</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=123">控制电机</a></dt>
+                                <dd> 
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=236">步进电机</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=237">伺服电机</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=124">其他电动机</a></dt>
+                                <dd>                                   
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=240">测功机</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=238">纺织电机</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=239">潜水电泵</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=393">电机控制设备</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=394">高压软启动</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=395">低压软启动</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=396">电磁式软启动</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=397">电子式软启动</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=398">其他</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=126">发电机</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=247">单相同步发电机</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=248">三相同步发电机</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=249">永磁同步发电机</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=408">直流发电机</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=250">其他</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=128">发电机组</a></dt>
+                                <dd>                  
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=256">柴油发电机组</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=257">汽油发电机组</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=125">水/汽轮机</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=241">水轮机</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=242">汽轮机</a></em>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="cat-right">
+                            <dl class="categorys-promotions" clstag="homepage|keycount|home2013|0601c">
+                                <dd>
+                                    <ul>
+                                        <li><a href="/index.php?controller=site&action=products&id=472" title="山东山防防爆电机/YB2系列/隔爆型三相异步电动机">
+                                            <img src="http:www.e9688.com/upload/2015/09/14/20150914113529134.jpg" width="194" height="145" title="山东山防防爆电机/YB2系列/隔爆型三相异步电动机"></a>
+                                        </li>
+                                        <li><a href="/index.php?controller=site&action=products&id=471" title="大连电机/YD系列/变极多速电机">
+                                            <img src="http:www.e9688.com/upload/2015/09/14/20150914111709494.jpg" width="194" height="145" title="大连电机/YD系列/变极多速电机"></a>
+                                        </li>
+                                        <li><a href="/index.php?controller=site&action=products&id=470" title="六安江淮电机/Y2VP80-355/变频调速三相异步电动机">
+                                            <img src="http:www.e9688.com/upload/2015/09/14/20150914110555788.jpg" width="194" height="145" title="六安江淮电机/Y2VP80-355/变频调速三相异步电动机"></a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                       
+                <div class="item" onmouseover="this.className='item on'" onmouseleave="this.className='item'">
+                    <span>
+                        <h3><a href="/index.php?controller=site&action=pro_list&cat=104">风能/太阳能/电源/储能设备</a></h3>
+                    </span>
+                    <div class="i-mc clearfix">
+                        <div class="close">x</div>
+                        <div class="subitem">
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=129">风能</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=261">风力发电机组</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=262">风力箱变</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=263">风力控制器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=264">并网变流器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=265">风力发电塔架</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=266">风力发电附件</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=130">光伏</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=267">光伏发电系统</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=268">太阳能板</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=269">光伏发电控制器/控制柜</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=270">光伏发电逆变器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=271">汇流箱</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=272">光伏发电支架</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=133">储能装置</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=481">储能电池</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=482">储能电感</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=483">电容器</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=468">普通电源</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=469">开关电源</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=470">变频电源</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=471">逆变电源</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=476">直流电源</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=479">其它</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=473">特种电源</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=474">EPS应急电源</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=475">医疗电源</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=477">安防电源</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=478">UPS电源</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=480">其它</a></em>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="cat-right">
+                            <dl class="categorys-promotions" clstag="homepage|keycount|home2013|0601c">
+                                <dd>
+                                    <ul>
+                                        <li><a href="/index.php?controller=site&action=products&id=484" title="西安华超/HCMC系列/直流脉冲电容器">
+                                            <img src="http:www.e9688.com/upload/2015/09/14/20150914173655102.jpg" width="194" height="145" title="西安华超/HCMC系列/直流脉冲电容器"></a>
+                                        </li>
+                                        <li><a href="/index.php?controller=site&action=products&id=483" title="四川波瑞/LC-QA系列/蓄电池">
+                                            <img src="http:www.e9688.com/upload/2015/09/14/20150914173014233.jpg" width="194" height="145" title="四川波瑞/LC-QA系列/蓄电池"></a>
+                                        </li>
+                                        <li><a href="/index.php?controller=site&action=products&id=482" title="武汉迈力特/MiPS-系列/机架式电源">
+                                            <img src="http:www.e9688.com/upload/2015/09/14/20150914171334572.jpg" width="194" height="145" title="武汉迈力特/MiPS-系列/机架式电源"></a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                       
+                <div class="item" onmouseover="this.className='item on'" onmouseleave="this.className='item'">
+                    <span>
+                        <h3><a href="/index.php?controller=site&action=pro_list&cat=105">电气仪器仪表</a></h3>
+                    </span>
+                    <div class="i-mc clearfix">
+                        <div class="close">x</div>
+                        <div class="subitem">
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=134">智能电力仪表</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=289">电力监控类</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=290">电能管理类</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=291">电气安全类</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=135">电工仪表</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=292">频率表</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=293">功率表</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=294">示波器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=295">电压表</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=296">电流表</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=297">万用表</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=298">电阻表</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=299">电能表</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=136">电气试验装置</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=300">雷电冲击发生器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=301">工频交流耐压试验设备</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=302">直流耐压试验</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=303">温升试验设备</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=304">直流电阻测试仪</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=305">绝缘电阻测试仪</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=306">变压比测试仪</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=307">局部放电测试仪</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=308">介质损耗测试仪</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=309">色谱分析测试仪</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=137">电气教学仪器</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=462">通用电工电子教仪</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=465">供配电技术教仪</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=466">电力工程教仪</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=467">电力系统继电保护教仪</a></em>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="cat-right">
+                            <dl class="categorys-promotions" clstag="homepage|keycount|home2013|0601c">
+                                <dd>
+                                    <ul>
+                                        <li><a href="/index.php?controller=site&action=products&id=370" title="重庆尚德仪器/SDJB-03电力系统微机保护综合实训装置">
+                                            <img src="http://www.e9688.com/upload/2015/08/31/20150831105940521.jpg" width="194" height="145" title="重庆尚德仪器/SDJB-03电力系统微机保护综合实训装置"></a>
+                                        </li>
+                                        <li><a href="/index.php?controller=site&action=products&id=369" title="重庆尚德仪器/SDGP-01型变配电室值班电工技能培训考核系统">
+                                            <img src="http://www.e9688.com/upload/2015/08/31/20150831103846553.jpg" width="194" height="145" title="重庆尚德仪器/SDGP-01型变配电室值班电工技能培训考核系统"></a>
+                                        </li>
+                                        <li><a href="/index.php?controller=site&action=products&id=368" title="重庆尚德仪器/SDEEC-1型变电二次安装工实训考核装置">
+                                            <img src="http://www.e9688.com/upload/2015/08/31/20150831103052119.jpg" width="194" height="145" title="重庆尚德仪器/SDEEC-1型变电二次安装工实训考核装置"></a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                       
+                <div class="item" onmouseover="this.className='item on'" onmouseleave="this.className='item'">
+                    <span>
+                        <h3><a href="/index.php?controller=site&action=pro_list&cat=106">电力自动化/电力电子/电气传动</a></h3>
+                    </span>
+                    <div class="i-mc clearfix">
+                        <div class="close">x</div>
+                        <div class="subitem">
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=138">电力自动化</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=312">调度自动化</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=313">变电站自动化</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=314">配网自动化</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=315">电厂自动化</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=316">变电站综合预警</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=139">继电保护装置</a></dt>
+                                <dd>                               
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=317">发电机保护装置</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=318">变压器保护装置</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=319">线路保护装置</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=320">电动机保护装置</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=321">电动机保护装置</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=322">其他保护装置</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=140">电力电子器件</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=323">整流二极管</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=324">快速整流二极管</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=325">肖特基二极管</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=326">晶闸管</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=327">双向晶闸管</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=328">逆导晶闸管</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=329">光控晶闸管</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=330">门极关断晶闸管</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=331">电力晶体管</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=332">电力MOSFET</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=141">电力电子模块</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=334">IGBT模块</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=335">可控硅模块</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=336">二极管模块</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=337">整流桥模块</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=338">晶闸管模块</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=142">电力电子装置</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=339">电解电源</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=340">电镀电源</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=341">无功补偿装置</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=143">其他装置</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=144">电气传动</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=342">直流调速</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=343">交流调速</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=344">电机软启动</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=345">PLC</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=346">变频器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=347">其他</a></em>
+                                </dd>
+                            </dl>
+                            </div>
+                        <div class="cat-right">
+                            <dl class="categorys-promotions" clstag="homepage|keycount|home2013|0601c">
+                                <dd>
+                                    <ul>
+                                        <li><a href="/index.php?controller=site&action=products&id=427" title="场效应 MOSFET">
+                                            <img src="http://www.e9688.com/upload/2015/09/07/20150907192635295.jpg" width="194" height="145" title="场效应 MOSFET"></a>
+                                        </li>
+                                        <li><a href="/index.php?controller=site&action=products&id=426" title="可关断可控硅/可关断晶闸管">
+                                            <img src="http://www.e9688.com/upload/2015/09/07/20150907190927177.jpg" width="194" height="145" title="可关断可控硅/可关断晶闸管"></a>
+                                        </li>
+                                        <li><a href="/index.php?controller=site&action=products&id=425" title="GTO晶闸管">
+                                            <img src="http://www.e9688.com/upload/2015/09/07/20150907185904891.jpg" width="194" height="145" title="GTO晶闸管"></a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                       
+                <div class="item" onmouseover="this.className='item on'" onmouseleave="this.className='item'">
+                    <span>
+                        <h3><a href="/index.php?controller=site&action=pro_list&cat=108">电焊和电加热/绝缘材料</a></h3>
+                    </span>
+                    <div class="i-mc clearfix">
+                        <div class="close">x</div>
+                        <div class="subitem">
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=145">电焊机</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=348">手工电弧焊机</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=349">埋弧焊机</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=350">氩弧焊机</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=351">二氧化碳弧焊机</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=352">电阻焊机</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=353">其他焊机</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=146">弧焊电源</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=354">弧焊变压器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=355">弧焊整流器</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=356">弧焊发电机</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=357">弧焊逆变器</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=147">电加热设备</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=358">电阻加热炉</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=359">电弧炉</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=360">感应炉</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=361">特殊加热设备</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=148">绝缘材料</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=362">漆/可聚合树脂/胶类</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=363">树脂浸渍纤维制品类</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=364">层压制品类</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=365">塑料类</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=366">云母制品类</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=367">薄膜/粘带类</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=368">纤维制品类</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=369">绝缘液体类</a></em>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="cat-right">
+                            <dl class="categorys-promotions" clstag="homepage|keycount|home2013|0601c">
+                                <dd>
+                                    <ul>
+                                        <li><a href="/index.php?controller=site&action=products&id=395" title="福州汉晶/弧焊逆变器/ZX7">
+                                            <img src="http://www.e9688.com/upload/2015/09/01/20150901170917694.jpg" width="194" height="145" title="福州汉晶/弧焊逆变器/ZX7"></a>
+                                        </li>
+                                        <li><a href="/index.php?controller=site&action=products&id=391" title="河北金晟/弧焊发电机/HF">
+                                            <img src="http://www.e9688.com/upload/2015/09/01/20150901164828737.jpg" width="194" height="145" title="河北金晟/弧焊发电机/HF"></a>
+                                        </li>
+                                        <li><a href="/index.php?controller=site&action=products&id=390" title="成都华远/弧焊整流器/ZX5">
+                                            <img src="http://www.e9688.com/upload/2015/09/01/20150901162459139.jpg" width="194" height="145" title="成都华远/弧焊整流器/ZX5"></a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                       
+                <div class="item" onmouseover="this.className='item on'" onmouseleave="this.className='item'">
+                    <span>
+                        <h3><a href="/index.php?controller=site&action=pro_list&cat=109">矿用电气/船用电气</a></h3>
+                    </span>
+                    <div class="i-mc clearfix">
+                        <div class="close">x</div>
+                        <div class="subitem">
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=150">隔爆型开关</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=380">组合开关</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=381">隔爆型高压真空配电装置</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=382">隔爆型低压真空配电装置</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=151">矿用电机/控制</a></dt>
+                                <dd>            
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=410">隔爆型电机</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=411">增安型电机</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=412">电机控制设备</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=413">其他矿用电气</a></dt>
+                                <dd>    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=414">矿用水泵</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=415">矿用移动变电站</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=416">矿用型无功补偿</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=155">工矿自动化</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=384">皮带机监控</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=385">提升机监控</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=386">井下泵房监控</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=387">选煤厂综合自动化</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=409">隔爆型综合保护装置</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=158">船用电气</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=388">船用发电设备</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=389">船用变电设备</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=390">船用配电设备</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=391">船用电器设备</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=392">船用照明和信号设备</a></em>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="cat-right">
+                            <dl class="categorys-promotions" clstag="homepage|keycount|home2013|0601c">
+                                <dd>
+                                    <ul>
+                                        <li><a href="/index.php?controller=site&action=products&id=515" title="武汉联威/QC系列/船用启动器">
+                                            <img src="http://www.e9688.com/upload/2015/10/10/20151010151502758.jpg" width="194" height="145" title="武汉联威/QC系列/船用启动器"></a>
+                                        </li>
+                                        <li><a href="/index.php?controller=site&action=products&id=514" title="武汉联威/PD系列/船用照明配电箱">
+                                            <img src="http://www.e9688.com/upload/2015/10/10/20151010150957968.jpg" width="194" height="145" title="武汉联威/PD系列/船用照明配电箱"></a>
+                                        </li>
+                                        <li><a href="/index.php?controller=site&action=products&id=512" title="济宁宏博/KJ284/煤矿供电监控系统">
+                                            <img src="http://www.e9688.com/upload/2015/10/10/20151010143319264.jpg" width="194" height="145" title="济宁宏博/KJ284/煤矿供电监控系统"></a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                       
+                <div class="item" onmouseover="this.className='item on'" onmouseleave="this.className='item'">
+                    <span>
+                        <h3><a href="/index.php?controller=site&action=pro_list&cat=107">电气行业配套产品</a></h3>
+                    </span>
+                    <div class="i-mc clearfix">
+                        <div class="close">x</div>
+                        <div class="subitem">
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=417">加工设备</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=421">变压器加工设备</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=422">互感器加工设备</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=423">电容器加工设备</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=424">电抗器加工设备</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=425">绝缘子加工设备</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=426">开关柜加工设备</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=427">电机加工设备</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=428">电焊机加工设备</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=429">电磁线加工设备</a></em>
+                                </dd>
+                            </dl>
+                                <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=418">变压器配套</a></dt>
+                                <dd>  
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=431">油箱</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=432">导电杆</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=433">变压器套管</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=434">压力释放阀</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=435">分接开关</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=436">有载调压开关</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=437">干变外壳</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=438">干变绝缘子</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=439">铜铝排</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=440">风机</a></em>
+                                </dd>
+                            </dl>
+                            <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=419">电机配套</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=441">电机定转子</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=443">其他</a></em>
+                                </dd>
+                            </dl>
+                           <dl class="fore">
+                                <dt><a href="/index.php?controller=site&action=pro_list&cat=420">其他配套</a></dt>
+                                <dd>                                    
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=444">开关柜壳体</a></em>
+                                    <em><a href="/index.php?controller=site&action=pro_list&cat=445">防爆开关外壳</a></em>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="cat-right">
+                            <dl class="categorys-promotions" clstag="homepage|keycount|home2013|0601c">
+                                <dd>
+                                    <ul>
+                                        <li><a href="/index.php?controller=site&action=products&id=456" title="淄博亚威/16吨JB23冲床">
+                                            <img src="http://www.e9688.com/upload/2015/09/11/20150911150841481.jpg" width="194" height="145" title="淄博亚威/16吨JB23冲床"></a>
+                                        </li>
+                                        <li><a href="/index.php?controller=site&action=products&id=446" title="东莞市新杰电工/笼式绞线机">
+                                            <img src="http://www.e9688.com/upload/2015/09/09/20150909152723120.jpg" width="194" height="145" title="东莞市新杰电工/笼式绞线机"></a>
+                                        </li>
+                                        <li><a href="/index.php?controller=site&action=products&id=444" title="翔升源/XSY系列绝缘柱">
+                                            <img src="http://www.e9688.com/upload/2015/09/09/20150909150547997.jpg" width="194" height="145" title="翔升源/XSY系列绝缘柱"></a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="smoothmenu1" class="ddsmoothmenu">
+            <ul>
+                <li><a href="/index.php?controller=site&action=index" class="selected">首 页</a></li>
+                <li><a href="/index.php?controller=site&action=brand">品牌专区</a></li>            
+                <li><a href="/index.php?controller=simpleplugin&action=demand_list">供求信息</a>
+                    <ul>
+                        <li><a href="/index.php?controller=simpleplugin&action=demand_list">采购信息</a></li>
+                        <li><a href="/index.php?controller=simpleplugin&action=supply_list">供货信息</a></li>
+                        <li><a href="/index.php?controller=site&action=help&id=15">一站式采购</a></li>
+                        <li><a href="/index.php?controller=site&action=groupon">电气团购</a></li>
+                    </ul>
+                </li>
+                <li><a href="/index.php?controller=site&action=zjpt">专家平台</a></li>
+                <li><a href="#">R-LIST</a></li>
+                <li>
+                    <a href="/index.php?controller=site&action=article">特色服务</a>
+                    <ul>
+                        <li><a href="/index.php?controller=site&action=article">安装服务</a></li>
+                        <li><a href="/index.php?controller=site&action=help&id=16">质量保证</a></li>
+                        <li><a href="/index.php?controller=site&action=estg">二手设备</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $('#allsort > .item').hover(function () {
+        var eq = $('#allsort > .item').index(this),             //获取当前滑过是第几个元素
+            h = $('#allsort').offset().top,                     //获取当前下拉菜单距离窗口多少像素
+            s = $(window).scrollTop(),                                  //获取游览器滚动了多少高度
+            i = $(this).offset().top,                                   //当前元素滑过距离窗口多少像素
+            item = $(this).children('.i-mc').height(),              //下拉菜单子类内容容器的高度
+            sort = $('#allsort').height();                      //父类分类列表容器的高度
+
+        if (item < sort) {                                              //如果子类的高度小于父类的高度
+            if (eq == 0) {
+                $(this).children('.i-mc').css('top', (i - h));
+            } else {
+                $(this).children('.i-mc').css('top', (i - h) + 1);
+            }
+        } else {
+            if (s > h) {                                                //判断子类的显示位置，如果滚动的高度大于所有分类列表容器的高度
+                if (i - s > 0) {                                            //则 继续判断当前滑过容器的位置 是否有一半超出窗口一半在窗口内显示的Bug,
+                    $(this).children('.i-mc').css('top', (s - h) + 2);
+                } else {
+                    $(this).children('.i-mc').css('top', (s - h) - (-(i - s)) + 2);
+                }
+            } else {
+                $(this).children('.i-mc').css('top', 3);
+            }
+        }
+
+        $(this).addClass('hover');
+        $(this).children('.i-mc').css('display', 'block');
+    }, function () {
+        $(this).removeClass('hover');
+        $(this).children('.i-mc').css('display', 'none');
+    });
+
+    $('.item > .i-mc > .close').click(function () {
+        $(this).parent().parent().removeClass('hover');
+        $(this).parent().hide();
+    });
+</script>
+<!--导航 end-->
+
+<div id="wrap">
+    <div class="dqwz">当前位置：<a href="/"> 首页</a> » 采购信息</div>
+    <div class="chanpin">
+        <div class="left">
+            <div class="pro-list1">
+                <dl class="pro-box">
+                    <dt>推荐产品</dt>
+                    <dd>
+                        <ul>
+                            <li>
+                                <a href="/index.php?controller=site&action=products&id=7" title="山东华尚/SCB10系列/环氧浇注干变">
+                                    <img src="http://www.e9688.com/upload/2015/10/16/20151016160900386.jpg" style="max-width: 186px; max-height: 186px;" alt="山东华尚/SCB10系列/环氧浇注干变"><span>山东华尚/SCB10系列/环氧浇注干变</span> </a>
+                                <p class="pro-price">￥16,500.00~￥199,600.00</p>
+                            </li>
+                                                                                                                                            <li>
+                                <a href="/index.php?controller=site&action=products&id=8" title="山东华尚/SBH15系列/非晶合金油变">
+                                    <img src="http://www.e9688.com/upload/2015/08/05/20150805114357385.jpg" style="max-width: 186px; max-height: 186px;" alt="山东华尚/SBH15系列/非晶合金油变"><span>山东华尚/SBH15系列/非晶合金油变</span> </a>
+                                <p class="pro-price">￥20,500.00~￥207,500.00</p>
+                            </li>
+                                                                                                                                            <li>
+                                <a href="/index.php?controller=site&action=products&id=9" title="SCB10环氧浇注干式变压器">
+                                    <img src="http://www.e9688.com/upload/2015/08/07/20150807155240873.jpg" style="max-width: 186px; max-height: 186px;" alt="SCB10环氧浇注干式变压器"><span>SCB10环氧浇注干式变压器</span> </a>
+                                <p class="pro-price">￥21,375.00~￥260,585.00</p>
+                            </li>
+                                                                                                                                            <li>
+                                <a href="/index.php?controller=site&action=products&id=10" title="钱江电气/ZYB系列/欧式箱式变电站">
+                                    <img src="http://www.e9688.com/upload/2015/08/07/20150807160837115.jpg" style="max-width: 186px; max-height: 186px;" alt="钱江电气/ZYB系列/欧式箱式变电站"><span>钱江电气/ZYB系列/欧式箱式变电站</span> </a>
+                                <p class="pro-price">￥105,355.00~￥333,925.00</p>
+                            </li>
+                                                                                                                                            <li>
+                                <a href="/index.php?controller=site&action=products&id=517" title="山东华驰/SCB10系列/环氧浇注式干变">
+                                    <img src="http://www.e9688.com/upload/2015/12/26/20151226114011701.jpg" style="max-width: 186px; max-height: 186px;" alt="山东华驰/SCB10系列/环氧浇注式干变"><span>山东华驰/SCB10系列/环氧浇注式干变</span> </a>
+                                <p class="pro-price">￥18,150.00~￥219,560.00</p>
+                            </li>
+                                                                                                                                            <li>
+                                <a href="/index.php?controller=site&action=products&id=516" title="山东华尚/SCBH15系列/非晶合金干变">
+                                    <img src="http://www.e9688.com/upload/2015/10/13/20151013105513796.jpg" style="max-width: 186px; max-height: 186px;" alt="山东华尚/SCBH15系列/非晶合金干变"><span>山东华尚/SCBH15系列/非晶合金干变</span> </a>
+                                <p class="pro-price">￥38,223.00~￥339,700.00</p>
+                            </li>
+                                                                                                                                            <li>
+                                <a href="/index.php?controller=site&action=products&id=515" title="武汉联威/QC系列/船用启动器">
+                                    <img src="http://www.e9688.com/upload/2015/10/10/20151010151502758.jpg" style="max-width: 186px; max-height: 186px;" alt="武汉联威/QC系列/船用启动器"><span>武汉联威/QC系列/船用启动器</span> </a>
+                                <p class="pro-price">￥1,300.00</p>
+                            </li>
+                            
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+
+        <div class="right-extra">
+            <div class="bg">
+                <div class="col-md-12">
+                    <h2>尊敬的会员,感谢您在此提交您的商业需求! <br><br>
+                        请您认真填写以下信息,以便我们快速的了解您的商业目标,我们将在第一时间与您取得联络,感谢您的支持!</h2>
+                </div>
+                <div id="podiv">&nbsp;</div>
+                <form class="form-horizontal" onsubmit="return toVaild()" method="post" action="get.php">
+                    <div class="form-group">
+                        <label for="xm" class="col-sm-2"><i class="icon icon-user"></i> 您的姓名</label>
+                        <div class="col-md-2 col-sm-10">
+                            <input type="text" name="name" class="form-control" id="xm" placeholder="姓名">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="dw"  class="col-sm-2"><i class="icon icon-home"></i> 公司/单位</label>
+                        <div class="col-md-6 col-sm-10">
+                            <input type="text" name="company" class="form-control" id="dw" placeholder="名称">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="tel"  class="col-sm-2"><i class="icon icon-mobile"></i> 联系电话</label>
+                        <div class="col-md-6 col-sm-10">
+                            <input type="text" name="tel" class="form-control" id="tel" placeholder="手机或座机">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputAccount4" class="col-sm-2"><i class="icon icon-resize-small"></i>业务方向 </label>
+                        <div class="form-group col-sm-8" >
+                            <label class="checkbox-inline">
+                                <input id="gyc" name="for[]" value="供应" type="checkbox">供应
+                            </label>
+                            <label  class="checkbox-inline">
+                                <input  id="qgc" name="for[]" value="求购" type="checkbox">求购
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputAddress1" class="col-sm-2"><i class="icon icon-th-list"></i> 业务范围</label>
+                        <div class="col-sm-3">
+                            <select name="area1" class="form-control" id="f1">
+                                <option>请选择</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-3">
+                            <select  name="area2" class="form-control" style="display: none" id="f2">
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputAddress1" class="col-sm-2"><i class="icon icon-file-text-o"></i> 业务描述</label>
+                        <div class="col-sm-6">
+                        <textarea name="infos" class="form-control" rows="3" placeholder="可以输入多行文本"></textarea>
+                    </div>
+                        </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-default">提交</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal fade" id="mySmModal">
+                <div class="modal-dialog modal-lg">
+                    <hr>
+                    <div id="notice" class="modal-content">
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+
+    <div>
+    <div class="footer1">
+        <div class="footer1m">
+            <div class="flogo fl">
+                <a href="/"><img src="http://www.e9688.com/views/default/skin/default/images/flogo.jpg"  alt="中国电气网" /></a>
+            </div>
+            <div class="footer1mr fr">
+                <div class="footer1a1 fl">
+                    <ul>
+                        <li>
+                            <a href="/index.php?controller=site&action=help_list&id=5"><span>售后服务</span></a> 
+                        </li>
+                                        <li><a href="/index.php?controller=site&action=help&id=4">变压器维修/维护中心</a></li>
+                        <li><a href="/index.php?controller=site&action=help&id=3">发票说明</a></li>
+                        <li><a href="/index.php?controller=site&action=help&id=2">售后服务政策</a></li>
+                        <li><a href="/index.php?controller=site&action=help&id=1">退换货政策</a></li>
+                    </ul>
+                </div>
+                <div class="footer1a1 fl">
+                    <ul>
+                        <li>
+                            <a href="/index.php?controller=site&action=help_list&id=4"><span>支付配送</span></a> 
+                        </li>
+                        <li><a href="/index.php?controller=site&action=help&id=6">配送方式</a></li>
+                        <li><a href="/index.php?controller=site&action=help&id=5">验货与签收</a></li>
+                    </ul>
+                </div>
+                <div class="footer1a1 fl">
+                    <ul>
+                        <li>
+                            <a href="/index.php?controller=site&action=help_list&id=3"><span>用户须知</span></a> 
+                        </li>
+                        <li>
+                            <a href="/index.php?controller=site&action=help&id=10">用户协议</a>
+                        </li>
+                        <li>
+                            <a href="/index.php?controller=site&action=help&id=9">订货须知</a>
+                        </li>
+                        <li>
+                            <a href="/index.php?controller=site&action=help&id=8">隐私保护条款</a>
+                        </li>
+                        <li>
+                            <a href="/index.php?controller=site&action=help&id=7">网站使用条款</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer1a1 fl">
+                    <ul>
+                        <li>
+                            <a href="/index.php?controller=site&action=help_list&id=7"><span>关于我们</span></a> 
+                        </li>
+                        <li><a href="/index.php?controller=site&action=help&id=12">联系我们</a></li>
+                        <li><a href="/index.php?controller=site&action=help&id=11">企业简介</a></li>
+                    </ul>
+                </div>
+                <div class="footer1a1 fl">
+                    <ul>
+                        <li>
+                            <a href="/index.php?controller=site&action=help_list&id=6"><span>客服中心</span></a> 
+                        </li>
+                        <li><a href="/index.php?controller=site&action=help&id=14">客服热线</a></li>
+                        <li><a href="/index.php?controller=site&action=help&id=13">在线客服</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer2">
+        <p> <span>电气制造专业信息系统平台—亚洲最大的电气产品销售与服务平台 <span>售前咨询：400-086-7716 邮箱：rinonsoft@163.com</span></span></p><p>   地址：青岛经济开发区山东科技大学科技园 <span> 版权所有</span> <span>©2015 备案号：鲁ICP备123456号</span><span></span><span> </span><span></span></p><p>   <br /></p><p>   <br /></p> 
+    </div>
+</div>
+<script src="../form/check.js"></script>   
+
+</body>
+</html>
